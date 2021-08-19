@@ -1,4 +1,4 @@
-# BorgBackup Client Container Image 💾 🐳 🐙
+# BorgBackup Client Container Image 💾 🐳
 
 Alpine-based image providing
 [BorgBackup](https://www.borgbackup.org/)
