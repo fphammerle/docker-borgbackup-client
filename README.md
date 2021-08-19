@@ -37,7 +37,7 @@ $ sudo docker run --name borgbackup_client --rm \
     --tmpfs /tmp:size=4M \
     -e BORG_PASSCOMMAND="cat /home/borg/borg-passphrase" \
     fphammerle/borgbackup-client \
-    borg create --stats ssh://username@host//repository::{hostname}-{utcnow} /data
+    borg create --stats --list "ssh://username@host//repository::$(hostname)-{utcnow}" /data
 ```
 
 `sudo docker` may be replaced with `podman`.
