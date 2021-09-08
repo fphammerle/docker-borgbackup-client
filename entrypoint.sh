@@ -7,6 +7,8 @@ if [ ! -f ~/.ssh/id_ed25519 ]; then
     cat ~/.ssh/id_ed25519.pub
 fi
 
-set -x
+if [ ! -z "$SHOW_COMMAND" ]; then
+    set -x
+fi
 
 exec "$@"

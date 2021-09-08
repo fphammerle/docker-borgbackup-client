@@ -16,6 +16,7 @@ RUN apk add --no-cache \
 VOLUME $HOME
 
 COPY entrypoint.sh /
+ENV SHOW_COMMAND=
 ENTRYPOINT ["/sbin/tini", "--", "/entrypoint.sh"]
 
 USER $USER
