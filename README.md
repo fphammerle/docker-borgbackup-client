@@ -1,8 +1,9 @@
 # BorgBackup Client Container Image 💾 🐳
 
 Alpine-based image providing
-[BorgBackup](https://www.borgbackup.org/)
-and [OpenSSH client](https://www.openssh.com/)
+[BorgBackup](https://www.borgbackup.org/),
+[OpenSSH client](https://www.openssh.com/),
+and [SSHFS](https://github.com/libfuse/sshfs)
 
 ```sh
 # 1. retrieve and authorize ssh client's public key

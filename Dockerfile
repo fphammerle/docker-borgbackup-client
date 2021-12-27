@@ -3,6 +3,7 @@ FROM docker.io/alpine:3.15.0
 ARG BORGBACKUP_PACKAGE_VERSION=1.1.17-r2
 ARG NETCAT_OPENBSD_PACKAGE_VERSION=1.130-r3
 ARG OPENSSH_CLIENT_PACKAGE_VERSION=8.8_p1-r1
+ARG SSHFS_PACKAGE_VERSION=3.7.2-r0
 ARG TINI_PACKAGE_VERSION=0.19.0-r0
 ARG USER=borg
 ARG HOME=/home/borg
@@ -10,6 +11,7 @@ RUN apk add --no-cache \
         borgbackup="$BORGBACKUP_PACKAGE_VERSION" \
         netcat-openbsd=$NETCAT_OPENBSD_PACKAGE_VERSION \
         openssh-client="$OPENSSH_CLIENT_PACKAGE_VERSION" \
+        sshfs=$SSHFS_PACKAGE_VERSION \
         tini=$TINI_PACKAGE_VERSION \
     && nc -h 2>&1 | grep '"5" (SOCKS)' \
     && adduser -S -h $HOME $USER
