@@ -17,6 +17,8 @@ RUN apk add --no-cache \
     && adduser -S -h $HOME $USER
 VOLUME $HOME
 
+COPY ssh_config /etc/ssh/ssh_config
+
 COPY entrypoint.sh /
 ENV SHOW_COMMAND=
 ENTRYPOINT ["/sbin/tini", "--", "/entrypoint.sh"]
