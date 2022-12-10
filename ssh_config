@@ -2,3 +2,9 @@
 # > minimum security-strength requirement of 112 bits [...]
 # https://csrc.nist.gov/publications/detail/sp/800-131a/rev-2/final
 RequiredRSASize 2048
+
+# abort connection when not receiving any data from server for 5 minutes
+# https://web.archive.org/web/20221101185048/https://borgbackup.readthedocs.io/en/stable/usage/serve.html#ssh-configuration
+# https://web.archive.org/web/20221210085804/https://github.com/fphammerle/docker-borgbackup-sshd/commit/ea67bc0f8a8fa339a1c99a0d6f105be6256034bb
+ServerAliveInterval 10
+ServerAliveCountMax 30

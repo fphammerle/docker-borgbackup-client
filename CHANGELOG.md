@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Changed
 - `ssh`: no longer accept RSA keys < 2048 bits for client & server (host) authentication
+- `ssh`: request keep alive message from server after not receiving any data for
+  10 seconds. terminate/timeout connection after 5 minutes without response.
 
 ## [0.3.0] - 2021-12-27
 ### Added
