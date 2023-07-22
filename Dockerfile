@@ -2,7 +2,9 @@ FROM docker.io/alpine:3.18.2
 
 ARG BORGBACKUP_PACKAGE_VERSION=1.2.4-r4
 ARG NETCAT_OPENBSD_PACKAGE_VERSION=1.219-r1
-ARG OPENSSH_CLIENT_PACKAGE_VERSION=9.3_p1-r3
+# https://www.openssh.com/releasenotes.html
+# https://git.alpinelinux.org/aports/log/main/openssh?h=3.18-stable
+ARG OPENSSH_CLIENT_PACKAGE_VERSION=9.3_p2-r0
 ARG SSHFS_PACKAGE_VERSION=3.7.3-r1
 ARG TINI_PACKAGE_VERSION=0.19.0-r1
 ARG USER=borg
