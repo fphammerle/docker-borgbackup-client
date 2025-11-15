@@ -2,7 +2,7 @@ FROM docker.io/alpine:3.22.2
 
 # https://www.borgbackup.org/releases/
 # https://git.alpinelinux.org/aports/log/community/borgbackup?h=3.22-stable
-ARG BORGBACKUP_PACKAGE_VERSION=1.4.1-r0
+ARG BORGBACKUP_PACKAGE_VERSION=1.4.2-r0
 # https://github.com/openbsd/src/commits/master/usr.bin/nc/netcat.c
 # https://salsa.debian.org/debian/netcat-openbsd/-/commits/upstream/netcat.c
 # https://git.alpinelinux.org/aports/log/main/netcat-openbsd?h=3.22-stable
