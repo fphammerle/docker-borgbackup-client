@@ -1,4 +1,4 @@
-FROM docker.io/alpine:3.22.2
+FROM docker.io/alpine:3.23.2
 
 # https://www.borgbackup.org/releases/
 # https://git.alpinelinux.org/aports/log/community/borgbackup?h=3.22-stable
@@ -6,11 +6,11 @@ ARG BORGBACKUP_PACKAGE_VERSION=1.4.3-r0
 # https://github.com/openbsd/src/commits/master/usr.bin/nc/netcat.c
 # https://salsa.debian.org/debian/netcat-openbsd/-/commits/upstream/netcat.c
 # https://git.alpinelinux.org/aports/log/main/netcat-openbsd?h=3.22-stable
-ARG NETCAT_OPENBSD_PACKAGE_VERSION=1.229.1-r0
+ARG NETCAT_OPENBSD_PACKAGE_VERSION=1.234.1-r0
 # https://www.openssh.com/releasenotes.html
 # https://git.alpinelinux.org/aports/log/main/openssh?h=3.22-stable
-ARG OPENSSH_CLIENT_PACKAGE_VERSION=10.0_p1-r10
-ARG SSHFS_PACKAGE_VERSION=3.7.3-r1
+ARG OPENSSH_CLIENT_PACKAGE_VERSION=10.2_p1-r0
+ARG SSHFS_PACKAGE_VERSION=3.7.5-r0
 # https://git.alpinelinux.org/aports/log/community/tini?h=3.22-stable
 ARG TINI_PACKAGE_VERSION=0.19.0-r3
 ARG USER=borg
